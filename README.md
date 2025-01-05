@@ -1,7 +1,30 @@
-# Flashcord is currently in the process of being rewritten.
-As I do not want Flashcord to be entirely broken when Discord releases their new Desktop UI update, Flashcord is currently being rewritten entirely to have a much better code structure, better performance and even sleeker animations and style.
+# Custom Flashcord Fork  
+You can load this fork with the following css (All FlashCord SID addons work perfect on this as I maintain compatability)
 
-You may follow Flashcord Ceres' development on the TSN Discord server and get early builds there, note that as of right now, Ceres is infinitely inferior to even the LPM branch of Flashcord. I'm currently working on a lot of other stuff in the background so updates may be slow sorry :/
+```css
+@import url("https://arch-linux.pro/sid.css");
+```
+
+My personal config (AL.PRO Installer/Configurator in testing)
+```css
+@import url("https://arch-linux.pro/sid.css");
+:root { --Flashcord-Installer: "AL.PRO a1"; 
+     --Flashcord-Configurator: "AL.PRO b3";
+     --Flashcord-Module_Idle_Optimizations: FCM-Idle_Max;
+     --Flashcord-Module_Chat-Slide: void;
+     --Flashcord-Module_Member-Slide: void;
+     --Flashcord-Module_Message-Slide: void;
+     --Flashcord-Module_Friends: void;
+     --Flashcord-Module_Role-Grid: void;
+     --Flashcord-Module_Blackout: FCM-Boot_Blackout-Terminal;
+     --Flashcord-Warnings: void;
+     --Flashcord-Image_CBM-Light: url("https://i.imgur.com/xEtmVjL.png");
+     --Flashcord-Image_CBM-Dark: url("https://i.imgur.com/ATC0Qan.png");
+     --FlashCore-Splash_Text: "sudo pacman -S braincells";
+     --Flashcord-Filter_CBM-Light: blur(2px) brightness(0.8);
+     --Flashcord-Filter_CBM-Dark: blur(0px) brightness(0.5);
+      }
+```
 
 <br>
 
