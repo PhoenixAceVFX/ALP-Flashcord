@@ -28,8 +28,8 @@ Last Base Language Update: bSID-DEV_240423*/
     .platform-win [class^="notAppAsidePanel_"]::before { content: "🪟 " var(--FlashCore-Branch) " " var(--FlashCore-Channel) "-" var(--FlashCore-Version)" | Report bugs in #🐞sgn-issues-reports on the SGN Discord Server." }
 
     #app-mount > div {
-        --FCL-Crash_Header: "Oh dear. Your Discord Client has Crashed.";
-        --FCL-Crash_Paragraph: "You may try the reload button below, however this button may lock you up in a crash loop. \A I'd suggest closing entirely Discord and relaunching it for better chances of recovery.";
+        --FCL-Crash_Header: "Oh shit, Discord just crashed.";
+		--FCL-Crash_Paragraph: "You can try to reload the client from the button below but you run the risk of a crash loop \A You should just kill discord and restart it so that it restarts properly instead of trying to do some hacky fix";
     
         --FCL-Blackout_Android: "⚠️ You are having connection problems.";
 
@@ -60,7 +60,7 @@ Last Base Language Update: bSID-DEV_240423*/
         --FCL-AT_Iridescent: "This is" var(--FCL-Theme_Iridescent)". The most ressource heavy mode of Flashcord. \A If you wanted a pure shot of eye candy, you've come to the right place. ⛔ PLEASE USE ON HIGH-END SYSTEMS ONLY.\A";
         --FCL-AT_Iridescent-Light: var(--FCL-AT_Iridescent) "This is the light variant and recommended way to use" var(--FCL-Theme_Iridescent)".";
         --FCL-AT_Iridescent-Dark: var(--FCL-AT_Iridescent) "This is the dark variant, but isn't recommended due to visibility issues.";
-        --FCL-AT_Terminal: "Terminal Mode is a Theme that tries to mimic the style of a Retro GNU/Linux TTY.";
+        --FCL-AT_Terminal: "Terminal Mode is a Theme that tries to mimic the style of a Retro GNU/Linux TTY. (Arch Linux TTY Moments)";
         --FCL-AT_Transparent: "Transparent Mode is currently not working. It will in future versions of Replugged and Flashcord.";
 
         --FCL-Effect: "\A 🎉 Flashcord Effect:";
@@ -73,9 +73,9 @@ Last Base Language Update: bSID-DEV_240423*/
 
         --FCL-Addon_Welcome: "\A\A📸 Welcome to " var(--FlashCore-Branch) " ! You are using the " var(--FlashCore-Channel) " Channel of Flashcord.\A\A";
 
-        --FCL-Credits_About: "\A About Flashcord";
+        --FCL-Credits_About: "\A About ALP Flashcord";
 
-        --FCL-Credits_SNDL: "Flashcord is a personal project maintained with love by SiriusBYT, it takes the design language of " var(--Q) "SNWE/SNDL" var(--Q) " and applies it to Discord. \A";
+        --FCL-Credits_SNDL: "ALP Flashcord is a personal project maintained with love by RunaXR (Because Sirius is a lazy frenchie), it takes the design language of " var(--Q) "SNWE/SNDL" var(--Q) " and applies it to Discord. \A";
         --FCL-Credits_Help: "Support is held on The Sirio Network Discord Server (https://sirio-network.com/redirect/discord). \A\A";
         --FCL-Credits_Alpha: "Please give a thanks to these amazing people who helped with the Closed Alpha of Flashcord 💖 \A";
         --FCL-Credits_Suppoters: "Of course, thanks to you, Flashcord Supporters 💸! \A";

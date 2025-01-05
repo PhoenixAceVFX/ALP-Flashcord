@@ -79,3 +79,49 @@ This information is only visible to you, please screenshot it and send it to @Si
 🏪 -- Community Flashcord Modules \A \
     😲 It's bloody empty in here! \A";
 }
+
+[id^="message-content-"]:has([href="http://alp/debug"], [href="http://alp/debug/store"] ) {
+        padding: 8px; margin: 8px; line-height: 15px !important;
+        background-image: url("https://cdn.dribbble.com/users/1427228/screenshots/5497843/red.gif"); background-size: cover;
+        border-radius: 25px;
+    }
+    [id^="message-content-"]:has([href="http://alp/debug"], [href="http://alp/debug/store"])::after {
+        color: white; white-space: pre-wrap;
+        font-family: var(--Flashcord-Font_Monospace);
+    }
+
+      /* ALP Specific Debug Information "Chat Effects" */
+[id^="message-content-"]:has([href="http://alp/debug"])::after {
+  content: 
+"\A\A🚧 ALP FLASHCORD GENERAL DEBUG INFORMATION 🚧\A \
+This information is only visible to you, please screenshot it and send it to @PhoenixAceVFX (RunaXR) for debug purposes if needed. \A \
+You could also just use this to flex your mods because thats what every r/unixporn user does if you ask me \A\A \
+📸 -- ALP Flashcord Information \A
+  🔄️ Branch: " var(--FlashCore-Branch) "\A \
+  🔗 Channel: " var(--FlashCore-Channel) "\A \
+  💡 Version: " var(--FlashCore-Version) "\A \
+  👷 Build Date: " var(--FlashCore-Build_Date, "🔥DEVELOPMENT BUILD") "\A\A \
+  🏗️ ALP Flashcord Installer Version: " var(--Flashcord-Installer, 'ℹ️ Manual Install')"\A \
+  🛠️ ALP Flashcord Configurator Version: " var(--Flashcord-Configurator, 'ℹ️ Configurator Unused')"\A\A \
+💬 -- Discord Client Information \A \
+  💻 Operating System: " var(--FlashCore-System_OS, '🦎 OpenASAR(?) [UNSUPPORTED]') "\A \
+  🎯 Client Modification: " var(--FlashCore-System_Client, '🚧 404 🚧') "\A \
+  🔧 ThemeHooker Present: " var(--FlashCore-System_ThemeHooker_Present, '❌ False') "\A \
+  🌈 Detected Theme: " var(--FlashCore-System_Theme, '🚧 404 🚧') "\A \
+  🖌️ Is using a Custom Theme: " var(--Flashcord-Module_CustomTheme, '❌ False') "\A\A \
+⚠️ Please also send the contents of your QuickCSS if you modified Flashcord. \A";
+}
+
+[id^="message-content-"]:has(a[href="http://alp/debug/store"])::after {
+  content: 
+"\A\A🚧 ALP FLASHCORD STORE MODULES DEBUG INFORMATION 🚧\A \
+This information is only visible to you, please screenshot it and send it to @PhoenixAceVFX (RunaXR) for debug purposes if needed. \A \
+You could also just use this to flex your mods because thats what every r/unixporn user does if you ask me \A\A \
+🛍️ ALP Flashcord Store Version: " var(--Flashcord-API_Store-Version, '🪖 ALP Flashcord will be powered by its Store API Soon.') "\A\A \
+🏬 -- Official Flashcord Modules \A \
+  🦾 Accessibility Mode by SiriusBYT: " var(--Flashcord-Store_Accessibility, '❌ Not Present') "\A \
+  ♾️ Infinite Chat Effects by SiriusBYT: " var(--Flashcord-Store_InfiniteChatEffects, '❌ Not Present') "\A \
+  🧽 Extended Chat Effects by SiriusBYT: " var(--Flashcord-Store_ExtendedChatEffects, '❌ Not Present') "\A\A \
+🏪 -- Community Flashcord Modules \A \
+  😲 It's bloody empty in here! \A";
+}/* Theme/ThemeHooker contains code common to all Advanced Themes. */
