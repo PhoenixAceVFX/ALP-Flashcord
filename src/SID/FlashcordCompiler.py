@@ -21,13 +21,19 @@ def ls():
     for root, dirs, files in os.walk(Path):
         for f in files:
             if f.endswith('.css'):
-                Temp = os.path.join(root, f).replace(f"{Path}/", "")
+                # Use os.path.join and normalize paths to be Linux-compliant
+                Temp = os.path.relpath(os.path.join(root, f), Path)
                 ReturnFiles.append(Temp)
+
+    # Exclude specific files
     try:
         ReturnFiles.remove("main.css")
         ReturnFiles.remove(File_Name)
     except ValueError:
-        pass  # Ignore if files are not in the list
+        pass  # Ignore if files are not found in the list
+
+    # Sort the files alphanumerically
+    ReturnFiles.sort()
     return ReturnFiles
 
 def Build_Date():
@@ -39,15 +45,15 @@ def Build_Date():
     return Build_String
 
 def Flashcord_Compiler():
-    WriteLog("Parsing CSS Files...")
+    WriteLog(f"Parsing CSS Files...")
     CSS_Files = ls()
-    WriteLog(f"Parsed the following files: {CSS_Files}")
+    WriteLog(f"Parsed the following files (sorted): {CSS_Files}")
     try:
         with open(File_Name, 'w', encoding='utf-8') as Final_File:
             for CSS_File in CSS_Files:
                 try:
-                    with open(CSS_File, 'r', encoding='utf-8') as CSS_File_Reader:
-                        Final_File.write(CSS_File_Reader.read())
+                    with open(CSS_File, 'r', encoding='utf-8') as Source_File:
+                        Final_File.write(Source_File.read())
                 except FileNotFoundError:
                     WriteLog(f"Warning: File '{CSS_File}' not found!")
             Final_File.write(Build_Date())
