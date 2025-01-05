@@ -158,8 +158,8 @@ html { /* bSID-DEV_240314: This file is ugly. Too bad! // bSID-DEV_240315: Unfuc
 
   --Flashcord-Filter_CBM-Light: blur(2px) brightness(0.8);
   --Flashcord-Filter_CBM-Dark: blur(0px) brightness(0.5);
-  --Flashcord-Image_CBM-Light: url("https://i.imgur.com/xEtmVjL.png");
-  --Flashcord-Image_CBM-Dark: url("https://i.imgur.com/ATC0Qan.png");
+  --Flashcord-Image_CBM-Light: url("https://i.imgur.com/HKKM7j1.jpeg");
+  --Flashcord-Image_CBM-Dark: url("https://i.imgur.com/wWylsjC.png");
 
   --Flashcord-Background-Animation_Iridescent-Light: SNDL-Background_MvX;
   --Flashcord-Background-Animation_Iridescent-Dark: SNDL-Background_MvX;
@@ -2195,4 +2195,4 @@ Last Base Language Update: bSID-DEV_240423*/
         --FCL-Credits_Translator-Quote: "      🗨️ [Sussy Wanker Quote] SiriusBYT: " var(--Q) "GangChat will rule over the world." var(--Q)" \A\A ";
     }
 }/* Overlay/Overlay handles code to modify the Discord Overlay *//* Splash/Splash handles customizing the Discord Updater/Splash */
-:root { --FlashCore-Build_Date: "15:48:36 - 05/01/2025"; }
+:root { --FlashCore-Build_Date: "16:05:12 - 05/01/2025"; }
