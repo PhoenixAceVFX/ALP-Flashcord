@@ -1,7 +1,7 @@
 {
-  "name": "Flashcord for Low-End Systems (LPM)",
-  "version": "LPM-240619",
-  "description": "Flashcord but nerfed, debloated. A stripped down version for those who want a no non-sense experience. [i] Read the Flashcord Wiki for more information [i]",
+  "name": "ALP Flashcord",
+  "version": "ALP-0.1.3",
+  "description": "Flashcord Beta Fork Modified and Maintained by RunaXR with Authorization from SiriusBYT",
   "engines": {
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
