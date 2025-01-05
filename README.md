@@ -1,4 +1,4 @@
-# Custom Flashcord Fork  
+# Custom Flashcord Beta Fork  
 You can load this fork with the following css (All FlashCord SID addons work perfect on this as I maintain compatability)
 
 ```css
