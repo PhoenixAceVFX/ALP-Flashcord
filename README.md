@@ -22,7 +22,6 @@ My personal config
      --Flashcord-Warnings: void;
      --Flashcord-Image_CBM-Light: url("https://i.imgur.com/xEtmVjL.png");
      --Flashcord-Image_CBM-Dark: url("https://i.imgur.com/ATC0Qan.png");
-     --FlashCore-Splash_Text: "sudo pacman -S braincells";
      --Flashcord-Filter_CBM-Light: blur(2px) brightness(0.8);
      --Flashcord-Filter_CBM-Dark: blur(0px) brightness(0.5);
       }
