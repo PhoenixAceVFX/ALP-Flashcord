@@ -1,11 +1,13 @@
 # Custom Flashcord Beta Fork  
-You can load this fork with the following css (All FlashCord SID addons work perfect on this as I maintain compatability)
+You can load this fork with the following css
+> All FlashCord SID addons work perfect on this as I maintain compatability
 
 ```css
 @import url("https://arch-linux.pro/sid.css");
 ```
 
-My personal config (AL.PRO Installer/Configurator in testing)
+My personal config
+> AL.PRO Installer/Configurator in testing
 ```css
 @import url("https://arch-linux.pro/sid.css");
 :root { --Flashcord-Installer: "AL.PRO a1"; 
