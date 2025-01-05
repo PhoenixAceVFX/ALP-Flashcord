@@ -187,7 +187,7 @@ html {
 	--Flashcord-Image_Transparent: var(--Flashcord-Image_Sync);
 	/* bSID-DEV_240411: These two themes still don't have previews. They will eventually. */
 
-	--Flashcord-Filter_CBM-Light: blur(8px) brightness(1);
+	--Flashcord-Filter_CBM-Light: blur(8px) brightness(0.8);
 	--Flashcord-Filter_CBM-Dark: blur(0px) brightness(0.5);
 	--Flashcord-Image_CBM-Light: url("https://i.imgur.com/xEtmVjL.png");
 	--Flashcord-Image_CBM-Dark: url("https://i.imgur.com/efOWsDo.png");
