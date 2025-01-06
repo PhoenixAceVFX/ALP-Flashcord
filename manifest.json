@@ -1,18 +1,18 @@
 {
-	"id": "dev.runaxr.ALPFlashcord",
-	"name": "ALP Flashcord",
-	"description": "Flashcord Beta Fork Modified and Maintained by RunaXR with Authorization from SiriusBYT",
-	"author": {
-		"name": "RunaXR",
-		"discordID": "1016895892055396484",
-		"github": "PhoenixAceVFX"
-	},
-	"version": "ALP-0.1.3",
-	"license": "CC BY-NC-ND 4.0",
-	"type": "replugged-theme",
-	"main": "src/SID/sid.css",
-	"source": "https://github.com/PhoenixAceVFX/ALP-Flashcord",
-	"flashcord": {
-		"show_on_flashcord_store": "true"
-	}
+  "id": "dev.runaxr.ALPFlashcord",
+  "name": "ALP Flashcord",
+  "description": "Flashcord Beta Fork Modified and Maintained by RunaXR with Authorization from SiriusBYT",
+  "author": {
+    "name": "RunaXR",
+    "discordID": "1016895892055396484",
+    "github": "PhoenixAceVFX"
+  },
+  "version": "0.1.3",
+  "license": "CC BY-NC-ND 4.0",
+  "type": "replugged-theme",
+  "main": "src/SID/sid.css",
+  "source": "https://github.com/PhoenixAceVFX/ALP-Flashcord",
+  "flashcord": {
+    "show_on_flashcord_store": "true"
+  }
 }
