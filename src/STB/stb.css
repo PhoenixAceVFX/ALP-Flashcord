@@ -152,7 +152,7 @@ body {
     animation: FlashCore-FadeIn_Bottom var(--Flashcord-AnimMult-XSlow, 1s);
   }
   [class^="content_"]:before {
-    content: "Flashcord";
+    content: "ALP Flashcord";
     margin: auto;
     text-align: center;
     scale: 5;
@@ -2815,7 +2815,7 @@ VERY WIP and Replugged is fucking up bad time right now and CSS is almost never 
     [href="https://discord.com/settings/premium"],
     [class*="premium"] { display: none; }
     #nitro-server-boost-tab,
-    #guild-header-popout-premium-subscribe { display: none; !important}
+    #guild-header-popout-premium-subscribe { display: none !important}
 
     /* Zero money spending */
     [class^="focusLock_"]:has([class^="paymentModalContent"]) {
@@ -3180,14 +3180,14 @@ html:has([href*="net.saltssaumure.piOS.asar"]) {
     
     Except now Flashcord LPM is on the Replugged store... Eh whatever
 
-    .replugged-addon-card:has([href*="com.sirio-network.flashcord"])::before {
-        content: "💖 Thank you for using Flashcord!\A\A";
+    .replugged-addon-card:has([href*="dev.runaxr.ALPFlashcord"])::before {
+        content: "💖 Thank you for using ALP Flashcord!\A\A";
     }
     .replugged-addon-card:has([href*="flashcord-legacy"])::before {
         content: "Don't. Don't do it.\A\A";
         font-weight: 900;
     }
-    .replugged-addon-card:has([href*="com.sirio-network.flashcord"]) {
+    .replugged-addon-card:has([href*="dev.runaxr.ALPFlashcord"]) {
         order: -6948;
     }
     .replugged-addon-card:has([href*="flashcord-legacy"]) {
