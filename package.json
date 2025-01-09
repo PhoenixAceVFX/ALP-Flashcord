@@ -1,6 +1,6 @@
 {
   "name": "ALP Flashcord",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "description": "Flashcord Beta Fork Modified and Maintained by RunaXR with Authorization from SiriusBYT",
   "engines": {
     "node": ">=18.0.0",
@@ -11,8 +11,8 @@
     "watch": "replugged build theme --watch",
     "bundle": "replugged bundle theme",
     "release": "replugged release",
-    "lint": "prettier ./src --check",
-    "lint:fix": "prettier ./src --write"
+    "lint": "prettier ./ --check",
+    "lint:fix": "prettier ./ --write"
   },
   "keywords": [],
   "author": "",
