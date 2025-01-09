@@ -38,13 +38,13 @@
 
 
     [theme-hooker="theme-citrus-sherbert"] {
-        background-image: var(--Flashcord-Iridescent_Light-Image, url("https://sirio-network.com/sbin/PSWave-Iridescent_Light.png")) !important;
+        background-image: var(--Flashcord-Iridescent_Light-Image, url("https://arch-linux.pro/ALPResources/PSWave-Iridescent_Light.png")) !important;
         background-color: #FFFFFF;
         animation: var(--Flashcord-Iridescent_Light-Animation, SNDL-Background_MvX) var(--Flashcord-AnimMult-XTSlow, 2s) linear infinite !important;
     }
 
     [theme-hooker="theme-chroma-glow"] {
-        background-image: var(--Flashcord-Iridescent_Dark-Image, url("https://sirio-network.com/sbin/PSWave-Iridescent_Dark.png")) !important;
+        background-image: var(--Flashcord-Iridescent_Dark-Image, url("https://arch-linux.pro/ALPResources/PSWave-Iridescent_Dark.png")) !important;
         background-color: #000000;
         animation: var(--Flashcord-Iridescent_Dark-Animation, SNDL-Background_MvX) var(--Flashcord-AnimMult-XTSlow, 2s) linear infinite !important;
     }
@@ -71,13 +71,13 @@
     @container FC-ControlPanel_PopUp (min-width: 0px) {
         [theme-hooker="theme-citrus-sherbert"] [class^="layer_"]:nth-child(2) {
             border: 1px solid var(--Flashcolord-Light_Accent);
-            background-image: url("https://sirio-network.com/flashcord/ressources/backgrounds/BasicGrid-White_Fast.gif");
+            background-image: url("https://arch-linux.pro/ALPResources/BasicGrid-White_Fast.gif");
             background-size: cover;
         }
 
         [theme-hooker="theme-chroma-glow"] [class^="layer_"]:nth-child(2) {
             border: 1px solid var(--Flashcolord-Dark_Accent);
-            background-image: url("https://sirio-network.com/flashcord/ressources/backgrounds/BasicGrid-Dark_Fast.gif");
+            background-image: url("https://arch-linux.pro/ALPResources/BasicGrid-Dark_Fast.gif");
             background-size: cover;
         }
     }

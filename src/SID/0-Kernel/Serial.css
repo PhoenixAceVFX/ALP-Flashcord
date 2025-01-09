@@ -135,7 +135,7 @@ html:has(body[class*="bd"]) {
 	padding: 8px;
 	margin: 8px;
 	line-height: 15px !important;
-	background-image: url("https://sirio-network.com/flashcord/ressources/backgrounds/BasicGrid-Dark_Fast.gif");
+	background-image: url("https://arch-linux.pro/ALPResources/BasicGrid-Dark_Fast.gif");
 	background-size: cover;
 	border-radius: 25px;
 }

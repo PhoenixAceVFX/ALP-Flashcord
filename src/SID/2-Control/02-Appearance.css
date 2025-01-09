@@ -122,7 +122,7 @@
 
   /* Light Mode */
 	[class*="basicThemeSelectors_"] > [class^="themeSelectionContainer_"]:first-child > [class^="themeSelection_"] {
-		background-image: url("https://sirio-network.com/flashcord/ressources/theme-previews/theme-light.png") !important;
+		background-image: url("https://arch-linux.pro/ALPResources/theme-light.png") !important;
 	}
 
 	[class*="basicThemeSelectors_"] > [class^="themeSelectionContainer_"]:first-child > [class^="themeSelection_"]::before {
@@ -131,7 +131,7 @@
 
   /* Dark Mode */
 	[class*="basicThemeSelectors_"] > [class^="themeSelectionContainer_"]:nth-child(2) > [class^="themeSelection_"] {
-		background-image: url("https://sirio-network.com/flashcord/ressources/theme-previews/theme-dark.png") !important;
+		background-image: url("https://arch-linux.pro/ALPResources/theme-dark.png") !important;
 	}
 
 	[class*="basicThemeSelectors_"] > [class^="themeSelectionContainer_"]:nth-child(2) > [class^="themeSelection_"]::before {
@@ -227,7 +227,7 @@
 
   /* Advanced Theme: Terminal */
 	[class^="themeSelection_"][style*="--bg-gradient-aurora"] {
-		background-image: url("https://sirio-network.com/flashcord/ressources/theme-previews/theme-terminal.gif") !important;
+		background-image: url("https://arch-linux.pro/ALPResources/theme-terminal.gif") !important;
 	}
 
 	[class^="themeSelection_"][style*="--bg-gradient-aurora"]::before {

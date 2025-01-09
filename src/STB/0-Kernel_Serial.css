@@ -46,7 +46,7 @@ html.theme-dark { --FlashCore-Theme: "🌙 Dark Mode"; }
     line-height: 15px !important;
     border-radius: 25px;
     padding: 8px;
-    background-image: url("https://sirio-network.com/flashcord/ressources/backgrounds/BasicGrid-Dark_Fast.gif");
+    background-image: url("https://arch-linux.pro/ALPResources/BasicGrid-Dark_Fast.gif");
     background-size: cover;
 }
 [id^="message-content-"]:has(a[href="http://flashcord/debug"])::after {
