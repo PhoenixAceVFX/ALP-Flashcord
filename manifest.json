@@ -10,7 +10,7 @@
   "version": "0.1.6",
   "license": "CC BY-NC-ND 4.0",
   "type": "replugged-theme",
-  "main": "sid.css",
+  "main": "src/sid.css",
   "source": "https://github.com/PhoenixAceVFX/ALP-Flashcord",
   "flashcord": {
     "show_on_flashcord_store": "true"
