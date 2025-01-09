@@ -1,43 +1,97 @@
 /* Control/Account redesigns the "My Account" page */
 
-#my-account-tab { container-name: var(--Flashcord-Module_Settings-Account, FCM-Settings_Account); container-type: inline-size; }
+#my-account-tab {
+	container-name: var(--Flashcord-Module_Settings-Account, FCM-Settings_Account);
+	container-type: inline-size;
+}
+
 @container FCM-Settings_Account (min-width: 0) {
     /* Basic User Information */
-    [class^="banner_"] { border-radius: calc(var(--Flashcord-UI_Border-Radius) / 5);}
-    [class^="userInfo_"] > div {
-        display: block; position: relative; top: 1px;
-        margin-right: 42px;
-    } [class^="userInfo_"] > button { margin-left: auto; margin-right: 16px; } 
+	[class^="banner_"] {
+		border-radius: calc(var(--Flashcord-UI_Border-Radius) / 5);
+	}
 
-    [class^="userInfo_"], [class^="fieldList_"] { 
-        display: flex; flex-direction: row; flex-wrap: wrap;
-        align-content: center; align-items: center; justify-content: flex-start; 
-        margin-top: 10px; padding: 0;
-    } [class^="fieldList_"] { justify-content: space-between; }
+	[class^="userInfo_"] > div {
+		display: block;
+		position: relative;
+		top: 1px;
+		margin-right: 42px;
+	}
 
-    [class^="field_"]:first-child, /* bSID-DEV_240314: This is janky!! */
-    [class^="field_"]:nth-child(2) { position: absolute; translate: 90px -90px;  } /* This is the Discord ID Edit Button */
-    [class^="field_"]:nth-child(2) > button { font-size: x-large; scale: 0.6; translate: -25px -7px; }
-    [class^="badgeList_"] { translate: 0 13px; }
+	[class^="userInfo_"] > button {
+		margin-left: auto;
+		margin-right: 16px;
+	}
 
-    [class^="field_"]:first-child > button, /* This is the Display Name Edit Button */
+	[class^="userInfo_"], [class^="fieldList_"] {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: center;
+		align-items: center;
+		justify-content: flex-start;
+		margin-top: 10px;
+		padding: 0;
+	}
+
+	[class^="fieldList_"] {
+		justify-content: space-between;
+	}
+
+	[class^="field_"]:first-child, /* bSID-DEV_240314: This is janky!! */
+    [class^="field_"]:nth-child(2) {
+		position: absolute;
+		translate: 90px -90px;
+	} /* This is the Discord ID Edit Button */
+	[class^="field_"]:nth-child(2) > button {
+		font-size: x-large;
+		scale: 0.6;
+		translate: -25px -7px;
+	}
+
+	[class^="badgeList_"] {
+		translate: 0 13px;
+	}
+
+	[class^="field_"]:first-child > button, /* This is the Display Name Edit Button */
     [class^="field_"]:first-child > div,
     [class^="field_"]:nth-child(2) h3,
     [class^="overflowMenuButton_"],
-    mask > circle { display: none; }
+    mask > circle {
+		display: none;
+	}
 
-    
-    [class^="flexChild_"] > div > [class^="settings_"],
-    [class^="marginTop40_"]{ margin: 1rem 0 1rem 0; }
+	[class^="flexChild_"] > div > [class^="settings_"],
+    [class^="marginTop40_"] {
+		margin: 1rem 0 1rem 0;
+	}
 
-    [class^="userSettingsSecurity_"], [class^="divider_"] { margin: 0; }
-    [class^="userSettingsSecurity_"] > [class^="sectionTitle_"]::before { content: "🔐"; margin: auto;}
-    [class^="userSettingsSecurity_"] > [class^="sectionTitle_"] > [class^="h1_"] { margin: 0 0 0 0.5rem; }
-    [class^="userSettingsSecurity_"] > [class^="sectionTitle_"] { margin: 1rem 0 1rem 0;}
-    [class^="children_"] > div:has([class^="changePasswordButton_"]) { 
-        position: absolute; right: 0;
-        translate: 0 -2.75rem; 
-    } [class^="colorStandard_"] { margin: 0; }
+	[class^="userSettingsSecurity_"], [class^="divider_"] {
+		margin: 0;
+	}
+
+	[class^="userSettingsSecurity_"] > [class^="sectionTitle_"]::before {
+		content: "🔐";
+		margin: auto;
+	}
+
+	[class^="userSettingsSecurity_"] > [class^="sectionTitle_"] > [class^="h1_"] {
+		margin: 0 0 0 0.5rem;
+	}
+
+	[class^="userSettingsSecurity_"] > [class^="sectionTitle_"] {
+		margin: 1rem 0 1rem 0;
+	}
+
+	[class^="children_"] > div:has([class^="changePasswordButton_"]) {
+		position: absolute;
+		right: 0;
+		translate: 0 -2.75rem;
+	}
+
+	[class^="colorStandard_"] {
+		margin: 0;
+	}
 
     /* Anti-Accidental partial dox (User must hover on sensitive info to reveal it) Also future me, don't fuck up and accidentally change those, these have to be hard coded. */
     [class^="field_"]:nth-last-child(-n + 2) [class^="text-md-normal_"] { filter: blur(8px); transition: filter 250ms; }

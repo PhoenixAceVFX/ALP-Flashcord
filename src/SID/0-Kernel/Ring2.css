@@ -1,17 +1,30 @@
 /* Kernel/Ring3 handles branding. */
 
 [class^="notAppAsidePanel_"]::before {
-    color: var(--Flashcord-Text); font-size: 12px; font-weight: 900;
-    position: absolute; top: -16px; left: 6px; width: 100vw; opacity: 0.5; z-index: 1;
-    user-select: none; pointer-events: none;
+	color: var(--Flashcord-Text);
+	font-size: 12px;
+	font-weight: 900;
+	position: absolute;
+	top: -16px;
+	left: 6px;
+	width: 100vw;
+	opacity: 0.5;
+	z-index: 1;
+	user-select: none;
+	pointer-events: none;
 } /* bSID-DEV_240422 RC3: This is only used for Windows now. */
 
 [class^="chat_"] [class^="children_"]::after {
-    display: none; width: max-content; align-items: center;
-    color: red; white-space: pre; margin: auto; 
-    background: white; border-radius: var(--Flashcord-UI_Border-Radius);
-    animation: Flashcord-Warning 16s linear;
-    content: var(--FCL-Warning_Basic); 
+	display: none;
+	width: max-content;
+	align-items: center;
+	color: red;
+	white-space: pre;
+	margin: auto;
+	background: white;
+	border-radius: var(--Flashcord-UI_Border-Radius);
+	animation: Flashcord-Warning 16s linear;
+	content: var(--FCL-Warning_Basic);
 }
 
 /* Real Code Optimization right here. Actually using containers for what they're fucking used for.
@@ -23,20 +36,35 @@ Also copy pasting the whole splash code twice just for ControlPanel_Full to work
 my god is this version rushed as hell, i blame 
 actually idk what to blame */
 @container FCM-ControlPanel_Splash (min-width: 0) {
-    [class^="sidebar_"] > :before {
-        content: var(--FlashCore-Branch) "\A Version "var(--FlashCore-Channel) "-" var(--FlashCore-Version);
-        margin-bottom: var(--FlashCore-Splash_Margin); padding: 10px; white-space: pre; opacity: 0.8;
-        background-image: var(--SNDL-Rainbow_Gradient); background-size: 100vw;
-        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-        animation: SNDL-Background_MvX var(--Flashcord-Animation_XTXSlow) linear infinite !important;
-       
-    }
-    [class^="sidebarRegionScroller_"]::after {
-        content: var(--FlashCore-Splash_Text); white-space: pre;
-        position: absolute; top: 48px; left: 105px;
-        display: flex; justify-content: center; text-align: center;
-        margin: 0px; padding: 0px; width: 1px;
-        translate: var(--FlashCore-Splash_X) var(--FlashCore-Splash_Y); scale: var(--FlashCore-Splash_Scale); rotate: -2deg;
-        animation: FlashCore-Splash var(--Flashcord-AnimMult-Splash, 500ms) ease-in-out infinite alternate; color: #CCCC00;
-    }
+	[class^="sidebar_"] > :before {
+		content: var(--FlashCore-Branch) "\A Version "var(--FlashCore-Channel) "-" var(--FlashCore-Version);
+		margin-bottom: var(--FlashCore-Splash_Margin);
+		padding: 10px;
+		white-space: pre;
+		opacity: 0.8;
+		background-image: var(--SNDL-Rainbow_Gradient);
+		background-size: 100vw;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: SNDL-Background_MvX var(--Flashcord-Animation_XTXSlow) linear infinite !important;
+	}
+
+	[class^="sidebarRegionScroller_"]::after {
+		content: var(--FlashCore-Splash_Text);
+		white-space: pre;
+		position: absolute;
+		top: 48px;
+		left: 105px;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		margin: 0px;
+		padding: 0px;
+		width: 1px;
+		translate: var(--FlashCore-Splash_X) var(--FlashCore-Splash_Y);
+		scale: var(--FlashCore-Splash_Scale);
+		rotate: -2deg;
+		animation: FlashCore-Splash var(--Flashcord-AnimMult-Splash, 500ms) ease-in-out infinite alternate;
+		color: #CCCC00;
+	}
 }

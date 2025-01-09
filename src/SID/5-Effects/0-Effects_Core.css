@@ -58,42 +58,93 @@
         .replugged-greentext > span { color: #789922 !important; }
 
         [class^="avatar_"], /* WTF Does this do? // Brother can't read - Sirius 03/12/23 */
-        [class^="replyAvatar_"],
+[class^="replyAvatar_"],
         [class^="avatarDecoration_"],
-        span[role="button"]:has(svg) {  display: none; }
-        [id^="message-reply-context-"]::before { display: none !important; }
-        [class^="contents_"] [class^="header-"] { margin-bottom: 1rem; }
-        [class^="mediaAttachmentsContainer"] { width: 100% !important;}
+        span[role="button"]:has(svg) {
+	display: none;
+}
 
-        [id^="message-reply-context-"] {
-            display: -webkit-box !important; top: 1.3rem; font-size: 1rem;
-            container-name: FCM-Effects_4Chan-L1 !important; container-type: inline-size !important;
-        }
-        @container FCM-Effects_4Chan-L1 (min-width: 0) {
-            img, svg, span:has(.stafftag) { display: none; }
-            [class^="username_"]::before { content: ">>"; color: #d00 !important; margin-left: 1rem; }
-            [class^="username_"] { color: #d00 !important; margin-top: 10px; }
-            [class^="repliedTextPreview_"] { margin-top: 0px; opacity: 0.5; }
-        }
+[id^="message-reply-context-"]::before {
+	display: none !important;
+}
+
+[class^="contents_"] [class^="header-"] {
+	margin-bottom: 1rem;
+}
+
+[class^="mediaAttachmentsContainer"] {
+	width: 100% !important;
+}
+
+[id^="message-reply-context-"] {
+	display: -webkit-box !important;
+	top: 1.3rem;
+	font-size: 1rem;
+	container-name: FCM-Effects_4Chan-L1 !important;
+	container-type: inline-size !important;
+}
+
+@container FCM-Effects_4Chan-L1 (min-width: 0) {
+	img, svg, span:has(.stafftag) {
+		display: none;
+	}
+
+	[class^="username_"]::before {
+		content: ">>";
+		color: #d00 !important;
+		margin-left: 1rem;
+	}
+
+	[class^="username_"] {
+		color: #d00 !important;
+		margin-top: 10px;
+	}
+
+	[class^="repliedTextPreview_"] {
+		margin-top: 0px;
+		opacity: 0.5;
+	}
+}
     }
 }
 
 @container FCM-Effects_Text (min-width: 0) {
-    [href="http://flashcord/small"],
+	[href="http://flashcord/small"],
     [href="http://flashcord/wide"],
     [href="http://flashcord/shake"],
     [href="http://flashcord/dramatic"],
     [href="http://flashcord/fade-bottom"], 
-    [href="http://flashcord/4chan"]{ display: none; }
-    [id^="message-content-"]:has([href^="http://flashcord/"])::after {
-        white-space: pre;
-        color: var(--Flashcord-Text);
-        font-size: small;
-    }
-    [id^="message-content-"]:has([href="http://flashcord/small"])::after { content: var(--FCL-Effect_Small); }
-    [id^="message-content-"]:has([href="http://flashcord/wide"])::after { content: var(--FCL-Effect_Wide); }
-    [id^="message-content-"]:has([href="http://flashcord/shake"])::after { content: var(--FCL-Effect_Shaking); }
-    [id^="message-content-"]:has([href="http://flashcord/dramatic"])::after { content: var(--FCL-Effect_Dramatic); }
-    [id^="message-content-"]:has([href="http://flashcord/fade-bottom"])::after { content: var(--FCL-Effect_Fade-Bottom); }
-    [id^="message-content-"]:has([href="http://flashcord/4chan"])::after { content: var(--FCL-Effect_4Chan); }
+    [href="http://flashcord/4chan"] {
+		display: none;
+	}
+
+	[id^="message-content-"]:has([href^="http://flashcord/"])::after {
+		white-space: pre;
+		color: var(--Flashcord-Text);
+		font-size: small;
+	}
+
+	[id^="message-content-"]:has([href="http://flashcord/small"])::after {
+		content: var(--FCL-Effect_Small);
+	}
+
+	[id^="message-content-"]:has([href="http://flashcord/wide"])::after {
+		content: var(--FCL-Effect_Wide);
+	}
+
+	[id^="message-content-"]:has([href="http://flashcord/shake"])::after {
+		content: var(--FCL-Effect_Shaking);
+	}
+
+	[id^="message-content-"]:has([href="http://flashcord/dramatic"])::after {
+		content: var(--FCL-Effect_Dramatic);
+	}
+
+	[id^="message-content-"]:has([href="http://flashcord/fade-bottom"])::after {
+		content: var(--FCL-Effect_Fade-Bottom);
+	}
+
+	[id^="message-content-"]:has([href="http://flashcord/4chan"])::after {
+		content: var(--FCL-Effect_4Chan);
+	}
 }

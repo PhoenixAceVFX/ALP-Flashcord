@@ -1,55 +1,153 @@
 /* Kernel/Serial handles debug information. 
 
 General Information */
-html.platform-win { --FlashCore-System_OS: "🪟 Windows" }
-html.platform-osx { --FlashCore-System_OS: "🍎 MacOS" }
-html.platform-linux { --FlashCore-System_OS: "🐧 GNU/Linux" }
-html:has(link[href*="replugged"]) { --FlashCore-System_Client: "🔌 Replugged"; }
-html:has(#vencord-themes) { --FlashCore-System_Client: "✨ Vencord"; }
-html:has(body[class*="bd"]) { --FlashCore-System_Client: "🩹 BetterDiscord [UNSUPPORTED]"; }
+html.platform-win {
+	--FlashCore-System_OS: "🪟 Windows";
+}
+
+html.platform-osx {
+	--FlashCore-System_OS: "🍎 MacOS";
+}
+
+html.platform-linux {
+	--FlashCore-System_OS: "🐧 GNU/Linux";
+}
+
+html:has(link[href*="replugged"]) {
+	--FlashCore-System_Client: "🔌 Replugged";
+}
+
+html:has(#vencord-themes) {
+	--FlashCore-System_Client: "✨ Vencord";
+}
+
+html:has(body[class*="bd"]) {
+	--FlashCore-System_Client: "🩹 BetterDiscord [UNSUPPORTED]";
+}
 
 /* Theming Related Shenanigans */
-.theme-light { --FlashCore-System_Theme: "☀️ Light Mode"; }
-.theme-dark { --FlashCore-System_Theme: "🌙 Dark Mode"; }
-.custom-theme-background { --Flashcord-Module_CustomTheme: "✅ True"}
-[theme-hooker*="-"] { --FlashCore-System_ThemeHooker_Present: "✅ True"; }
-[theme-hooker="theme-mint-apple"] { --FlashCore-System_Theme: "🖼️ Custom Background Mode (Light) // Mint Apple" !important; }
-[theme-hooker="theme-citrus-sherbert"] { --FlashCore-System_Theme: "💥 Iridescent Mode (Light) // Citrus Sherbert" !important; }
-[theme-hooker="theme-retro-raincloud"] { --FlashCore-System_Theme: "🌌 Unknown // Retro Raincloud" !important; }
-[theme-hooker="theme-hanami"] { --FlashCore-System_Theme: "🌌 Unknown // Hanami" !important; }
-[theme-hooker="theme-sunrise"] { --FlashCore-System_Theme: "🌌 Unknown // Sunrise" !important; }
-[theme-hooker="theme-cotton-candy"] { --FlashCore-System_Theme: "🌌 Unknown // Candyfloss" !important; }
-[theme-hooker="theme-lofi-vibes"] { --FlashCore-System_Theme: "🌌 Unknown // Lofi-Vibes" !important; }
-[theme-hooker="theme-desert-khaki"] { --FlashCore-System_Theme: "🌌 Unknown // Desert Khaki" !important; }
-[theme-hooker="theme-sunset"] { --FlashCore-System_Theme: "🖼️ Custom Background Mode (Dark) // Sunset" !important; }
-[theme-hooker="theme-chroma-glow"] { --FlashCore-System_Theme: "💥 Iridescent Mode (Dark) // Chroma Glow" !important; }
-[theme-hooker="theme-forest"] { --FlashCore-System_Theme: "🌌 Unknown // Forest" !important; }
-[theme-hooker="theme-crimson-moon"] { --FlashCore-System_Theme: "🌌 Unknown // Crimson Moon" !important; }
-[theme-hooker="theme-midnight-blurple"] { --FlashCore-System_Theme: "🌌 Unknown // Midnight Burple" !important; }
-[theme-hooker="theme-mars"] { --FlashCore-System_Theme: "🌌 Unknown // Mars" !important; }
-[theme-hooker="theme-dusk"] { --FlashCore-System_Theme: "🌌 Unknown // Dusk" !important; }
-[theme-hooker="theme-under-the-sea"] { --FlashCore-System_Theme: "🌌 Unknown // Under the Sea" !important; }
-[theme-hooker="theme-retro-storm"] { --FlashCore-System_Theme: "🌌 Unknown // Retro Storm" !important; }
-[theme-hooker="theme-neon-nights"] { --FlashCore-System_Theme: "🌌 Unknown // Neon Nights" !important; }
-[theme-hooker="theme-strawberry-lemonade"] { --FlashCore-System_Theme: "🌌 Unknown // Strawberry Lemonade" !important; }
-[theme-hooker="theme-aurora"] { --FlashCore-System_Theme: "⌨️ Terminal Mode // Aurora" !important; }
-[theme-hooker="theme-sepia"] { --FlashCore-System_Theme: "👻 Transparent Mode // Sepia" !important; }
-[theme-hooker="theme-easter-egg"] { --FlashCore-System_Theme: "🔥 Flashcord Legacy // Memory Lane" !important; }
+.theme-light {
+	--FlashCore-System_Theme: "☀️ Light Mode";
+}
+
+.theme-dark {
+	--FlashCore-System_Theme: "🌙 Dark Mode";
+}
+
+.custom-theme-background {
+	--Flashcord-Module_CustomTheme: "✅ True";
+}
+
+[theme-hooker*="-"] {
+	--FlashCore-System_ThemeHooker_Present: "✅ True";
+}
+
+[theme-hooker="theme-mint-apple"] {
+	--FlashCore-System_Theme: "🖼️ Custom Background Mode (Light) // Mint Apple" !important;
+}
+
+[theme-hooker="theme-citrus-sherbert"] {
+	--FlashCore-System_Theme: "💥 Iridescent Mode (Light) // Citrus Sherbert" !important;
+}
+
+[theme-hooker="theme-retro-raincloud"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Retro Raincloud" !important;
+}
+
+[theme-hooker="theme-hanami"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Hanami" !important;
+}
+
+[theme-hooker="theme-sunrise"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Sunrise" !important;
+}
+
+[theme-hooker="theme-cotton-candy"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Candyfloss" !important;
+}
+
+[theme-hooker="theme-lofi-vibes"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Lofi-Vibes" !important;
+}
+
+[theme-hooker="theme-desert-khaki"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Desert Khaki" !important;
+}
+
+[theme-hooker="theme-sunset"] {
+	--FlashCore-System_Theme: "🖼️ Custom Background Mode (Dark) // Sunset" !important;
+}
+
+[theme-hooker="theme-chroma-glow"] {
+	--FlashCore-System_Theme: "💥 Iridescent Mode (Dark) // Chroma Glow" !important;
+}
+
+[theme-hooker="theme-forest"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Forest" !important;
+}
+
+[theme-hooker="theme-crimson-moon"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Crimson Moon" !important;
+}
+
+[theme-hooker="theme-midnight-blurple"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Midnight Burple" !important;
+}
+
+[theme-hooker="theme-mars"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Mars" !important;
+}
+
+[theme-hooker="theme-dusk"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Dusk" !important;
+}
+
+[theme-hooker="theme-under-the-sea"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Under the Sea" !important;
+}
+
+[theme-hooker="theme-retro-storm"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Retro Storm" !important;
+}
+
+[theme-hooker="theme-neon-nights"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Neon Nights" !important;
+}
+
+[theme-hooker="theme-strawberry-lemonade"] {
+	--FlashCore-System_Theme: "🌌 Unknown // Strawberry Lemonade" !important;
+}
+
+[theme-hooker="theme-aurora"] {
+	--FlashCore-System_Theme: "⌨️ Terminal Mode // Aurora" !important;
+}
+
+[theme-hooker="theme-sepia"] {
+	--FlashCore-System_Theme: "👻 Transparent Mode // Sepia" !important;
+}
+
+[theme-hooker="theme-easter-egg"] {
+	--FlashCore-System_Theme: "🔥 Flashcord Legacy // Memory Lane" !important;
+}
 
 /* Debug "Chat Effect" Styling */
 [id^="message-content-"]:has([href="http://flashcord/debug"], [href="http://flashcord/debug/store"] ) {
-    padding: 8px; margin: 8px; line-height: 15px !important;
-    background-image: url("https://sirio-network.com/flashcord/ressources/backgrounds/BasicGrid-Dark_Fast.gif"); background-size: cover;
-    border-radius: 25px;
+	padding: 8px;
+	margin: 8px;
+	line-height: 15px !important;
+	background-image: url("https://sirio-network.com/flashcord/ressources/backgrounds/BasicGrid-Dark_Fast.gif");
+	background-size: cover;
+	border-radius: 25px;
 }
+
 [id^="message-content-"]:has([href="http://flashcord/debug"], [href="http://flashcord/debug/store"])::after {
-    color: white; white-space: pre-wrap;
-    font-family: var(--Flashcord-Font_Monospace);
+	color: white;
+	white-space: pre-wrap;
+	font-family: var(--Flashcord-Font_Monospace);
 }
 /* Debug Information "Chat Effects" */
 [id^="message-content-"]:has([href="http://flashcord/debug"])::after {
-    content: 
-"\A\A🚧 FLASHCORD GENERAL DEBUG INFORMATION 🚧\A \
+	content: "\A\A🚧 FLASHCORD GENERAL DEBUG INFORMATION 🚧\A \
 This information is only visible to you, please screenshot it and send it to @SiriusBYT for debug purposes if needed. \A\A \
 📸 -- Flashcord Information \A
     🔄️ Branch: " var(--FlashCore-Branch) "\A \
@@ -68,8 +166,7 @@ This information is only visible to you, please screenshot it and send it to @Si
 }
 
 [id^="message-content-"]:has(a[href="http://flashcord/debug/store"])::after {
-    content: 
-"\A\A🚧 FLASHCORD STORE MODULES DEBUG INFORMATION 🚧\A \
+	content: "\A\A🚧 FLASHCORD STORE MODULES DEBUG INFORMATION 🚧\A \
 This information is only visible to you, please screenshot it and send it to @SiriusBYT for debug purposes if needed. \A\A \
 🛍️ Flashcord Store Version: " var(--Flashcord-API_Store-Version, '🪖 Flashcord will be powered by its Store API one day.') "\A\A \
 🏬 -- Official Flashcord Modules \A \
@@ -81,19 +178,23 @@ This information is only visible to you, please screenshot it and send it to @Si
 }
 
 [id^="message-content-"]:has([href="http://alp/debug"], [href="http://alp/debug/store"] ) {
-        padding: 8px; margin: 8px; line-height: 15px !important;
-        background-image: url("https://cdn.dribbble.com/users/1427228/screenshots/5497843/red.gif"); background-size: cover;
-        border-radius: 25px;
-    }
-    [id^="message-content-"]:has([href="http://alp/debug"], [href="http://alp/debug/store"])::after {
-        color: white; white-space: pre-wrap;
-        font-family: var(--Flashcord-Font_Monospace);
-    }
+	padding: 8px;
+	margin: 8px;
+	line-height: 15px !important;
+	background-image: url("https://cdn.dribbble.com/users/1427228/screenshots/5497843/red.gif");
+	background-size: cover;
+	border-radius: 25px;
+}
+
+[id^="message-content-"]:has([href="http://alp/debug"], [href="http://alp/debug/store"])::after {
+	color: white;
+	white-space: pre-wrap;
+	font-family: var(--Flashcord-Font_Monospace);
+}
 
       /* ALP Specific Debug Information "Chat Effects" */
 [id^="message-content-"]:has([href="http://alp/debug"])::after {
-  content: 
-"\A\A🚧 ALP FLASHCORD GENERAL DEBUG INFORMATION 🚧\A \
+	content: "\A\A🚧 ALP FLASHCORD GENERAL DEBUG INFORMATION 🚧\A \
 This information is only visible to you, please screenshot it and send it to @PhoenixAceVFX (RunaXR) for debug purposes if needed. \A \
 You could also just use this to flex your mods because thats what every r/unixporn user does if you ask me \A\A \
 📸 -- ALP Flashcord Information \A
@@ -113,8 +214,7 @@ You could also just use this to flex your mods because thats what every r/unixpo
 }
 
 [id^="message-content-"]:has(a[href="http://alp/debug/store"])::after {
-  content: 
-"\A\A🚧 ALP FLASHCORD STORE MODULES DEBUG INFORMATION 🚧\A \
+	content: "\A\A🚧 ALP FLASHCORD STORE MODULES DEBUG INFORMATION 🚧\A \
 This information is only visible to you, please screenshot it and send it to @PhoenixAceVFX (RunaXR) for debug purposes if needed. \A \
 You could also just use this to flex your mods because thats what every r/unixporn user does if you ask me \A\A \
 🛍️ ALP Flashcord Store Version: " var(--Flashcord-API_Store-Version, '🪖 ALP Flashcord will be powered by its Store API Soon.') "\A\A \

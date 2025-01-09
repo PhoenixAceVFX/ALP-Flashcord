@@ -1,13 +1,16 @@
 /* Language/Language is a collection of strings used in Flashcord */
 
-#app-mount { container-name: var(--Flashcord-Language, English); container-type: inline-size; }
+#app-mount {
+	container-name: var(--Flashcord-Language, English);
+	container-type: inline-size;
+}
 
 #app-mount > div {
-    --FCL-Warning_Basic: var(--Flashcord-Warnings, var(--FCL-Warning_Beta) "  ");
-    --FCL-Warning_Iridescent: var(--Flashcord-Warnings, var(--FCL-Warning_Beta) var(--FCL-Theme_Iridescent) var(--FCL-Warning_Unfinished));
-    --FCL-Warning_CBM-Light: var(--Flashcord-Warnings, var(--FCL-Warning_Beta) var(--FCL-Theme_CBM-Light) var(--FCL-Warning_Unfinished));
-    --FCL-Warning_CBM-Dark: var(--Flashcord-Warnings, var(--FCL-Warning_Beta) var(--FCL-Theme_CBM-Dark) var(--FCL-Warning_Unfinished));
-    --FCL-Warning_Transparent: var(--Flashcord-Warnings, var(--FCL-Warning_Beta) var(--FCL-Theme_Transparent) var(--FCL-Warning_Unfinished));
+	--FCL-Warning_Basic: var(--Flashcord-Warnings, var(--FCL-Warning_Beta) "  ");
+	--FCL-Warning_Iridescent: var(--Flashcord-Warnings, var(--FCL-Warning_Beta) var(--FCL-Theme_Iridescent) var(--FCL-Warning_Unfinished));
+	--FCL-Warning_CBM-Light: var(--Flashcord-Warnings, var(--FCL-Warning_Beta) var(--FCL-Theme_CBM-Light) var(--FCL-Warning_Unfinished));
+	--FCL-Warning_CBM-Dark: var(--Flashcord-Warnings, var(--FCL-Warning_Beta) var(--FCL-Theme_CBM-Dark) var(--FCL-Warning_Unfinished));
+	--FCL-Warning_Transparent: var(--Flashcord-Warnings, var(--FCL-Warning_Beta) var(--FCL-Theme_Transparent) var(--FCL-Warning_Unfinished));
 } /* These should automatically set themselves correctly if you've set the variables correctly. */
 
 /* Translator's Guide:
