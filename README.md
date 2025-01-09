@@ -20,10 +20,10 @@ My personal config
      --Flashcord-Module_Role-Grid: void;
      --Flashcord-Module_Blackout: FCM-Boot_Blackout-Terminal;
      --Flashcord-Warnings: void;
-     --Flashcord-Image_CBM-Light: url("https://i.imgur.com/xEtmVjL.png");
-     --Flashcord-Image_CBM-Dark: url("https://i.imgur.com/ATC0Qan.png");
+     --Flashcord-Image_CBM-Light: url("https://i.imgur.com/cRGJPAW.jpeg");
+     --Flashcord-Image_CBM-Dark: url("https://i.imgur.com/cRGJPAW.jpeg");
      --Flashcord-Filter_CBM-Light: blur(2px) brightness(0.8);
-     --Flashcord-Filter_CBM-Dark: blur(0px) brightness(0.5);
+     --Flashcord-Filter_CBM-Dark: blur(0px) brightness(0.31);
       }
 ```
 
