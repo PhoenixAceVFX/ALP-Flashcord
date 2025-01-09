@@ -1,3 +1,6 @@
+[![Lint](https://github.com/PhoenixAceVFX/ALP-Flashcord/actions/workflows/lint.yml/badge.svg)](https://github.com/PhoenixAceVFX/ALP-Flashcord/actions/workflows/lint.yml)
+[![Release](https://github.com/PhoenixAceVFX/ALP-Flashcord/actions/workflows/release.yml/badge.svg)](https://github.com/PhoenixAceVFX/ALP-Flashcord/actions/workflows/release.yml)
+
 # Custom Flashcord Beta Fork  
 You can load this fork with the following css
 > All FlashCord SID addons work perfect on this as I maintain compatability
