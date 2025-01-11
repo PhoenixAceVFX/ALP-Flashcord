@@ -8,6 +8,10 @@ You can load this fork with the following css
 ```css
 @import url("https://arch-linux.pro/sid.css");
 ```
+Cutting Edge Mirror (Testing Build)
+```css
+@import url("https://c0dera.in/Redline/api/sid.css");
+```
 
 My personal config
 > AL.PRO Installer/Configurator in testing
