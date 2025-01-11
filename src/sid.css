@@ -24,7 +24,7 @@ Kernel/BIOS Handles fonts, variables and idle optimizations.*/
     
   --FlashCore-Branch: "ALP FlashCord";
   --FlashCore-Channel: "ALP Fork";
-  --FlashCore-Version: "0.1.7";
+  --FlashCore-Version: "0.1.7-1";
   
   --FlashCore-Splash_Text: "sudo pacman -S braincells";
   --FlashCore-Splash_Scale: 1.0;
@@ -1801,13 +1801,9 @@ container-type: inline-size;
 		translate: -25px -7px;
 	}
 
-	[class^="badgeList_"] {
-		translate: 0 13px;
-	}
-	/*Because CSS is weird and I can't figure out how to do this, I'm just going to manually force the CSS file to fix it.*/
-	.badgeList_b69b77 {
+	[class*="badgeList_"] { /*Don't even ask me why this one specifically has the *, CSS is weir */
 		translate: -7px 35px;
-   }
+	}
 
 	[class^="field_"]:first-child > button, /* This is the Display Name Edit Button */
     [class^="field_"]:first-child > div,
@@ -3549,4 +3545,4 @@ Last Base Language Update: bSID-DEV_240423*/
         --FCL-Credits_Translator-Quote: "      🗨️ [Sussy Wanker Quote] SiriusBYT: " var(--Q) "GangChat will rule over the world." var(--Q)" \A\A ";
     }
 }/* Overlay/Overlay handles code to modify the Discord Overlay *//* Splash/Splash handles customizing the Discord Updater/Splash */
-:root { --FlashCore-Build_Date: "11:03:06 - 11/01/2025"; }
+:root { --FlashCore-Build_Date: "11:20:40 - 11/01/2025"; }

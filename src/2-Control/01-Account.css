@@ -49,13 +49,9 @@
 		translate: -25px -7px;
 	}
 
-	[class^="badgeList_"] {
-		translate: 0 13px;
-	}
-	/*Because CSS is weird and I can't figure out how to do this, I'm just going to manually force the CSS file to fix it.*/
-	.badgeList_b69b77 {
+	[class*="badgeList_"] { /*Don't even ask me why this one specifically has the *, CSS is weir */
 		translate: -7px 35px;
-   }
+	}
 
 	[class^="field_"]:first-child > button, /* This is the Display Name Edit Button */
     [class^="field_"]:first-child > div,
