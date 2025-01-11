@@ -23,8 +23,8 @@ Kernel/BIOS Handles fonts, variables and idle optimizations.*/
   --font-headline: var(--Flashcord-Font);
     
   --FlashCore-Branch: "ALP FlashCord";
-  --FlashCore-Channel: "ALP Fork";
-  --FlashCore-Version: "0.1.7-1";
+  --FlashCore-Channel: "SID";
+  --FlashCore-Version: "0.1.8";
   
   --FlashCore-Splash_Text: "sudo pacman -S braincells";
   --FlashCore-Splash_Scale: 1.0;
@@ -257,7 +257,49 @@ html { /* bSID-DEV_240314: This file is ugly. Too bad! // bSID-DEV_240315: Unfuc
 --Flashcord-Image-Size_Iridescent: var(--Flashcord-Image-Size_Iridescent-Dark);
 --Flashcord-Image_Iridescent: var(--Flashcord-Image_Iridescent-Dark);
 --Flashcord-Image-Control_Iridescent: var(--Flashcord-Image-Control_Iridescent-Dark);
-}/* Kernel/Ring1 is a repository of Keyframes.
+}
+
+div > [class*="layout_"] {
+  border-radius: 12px;
+  margin: 0.3px;
+}
+ul > li > [class*="interactive_"] {
+  border-radius: 12px;
+  margin: 0.3px;
+}
+
+[class^="memberInner"]:has([mask*="online"], [fill="#23a55a"]) {
+  background: linear-gradient(to right, #446944 , transparent);
+}
+[class^="memberInner"]:has([mask*="offline"], [fill="#f0b232"]) {
+  background: linear-gradient(to right, #424242 , transparent);
+}
+[class^="memberInner"]:has([mask*="dnd"], [fill="#f23f43"]) {
+  background: linear-gradient(to right, #824646 , transparent);
+}
+[class^="memberInner"]:has([mask*="idle"], [fill="#f0b232"]) {
+  background: linear-gradient(to right, #87694b , transparent);
+}
+[class^="memberInner"]:has([mask*="streaming"], [fill="#3f2158"]) {
+  background: linear-gradient(to right, #3f2158 , transparent);
+}
+[class^="link_"]:has([mask*="online"], [fill="#23a55a"]) {
+  background: linear-gradient(to right, rgb(68, 105, 68) , transparent);
+}
+[class^="link_"]:has([mask*="offline"], [fill="#80848e"]) {
+  background: linear-gradient(to right, rgb(66, 66, 66) , transparent);
+}
+[class^="link_"]:has([mask*="dnd"], [fill="#f23f43"]) {
+  background: linear-gradient(to right, rgb(130,70,70) , transparent);
+}
+[class^="link_"]:has([mask*="idle"], [fill="#f0b232"]) {
+  background: linear-gradient(to right, rgb(135, 105, 75) , transparent);
+}
+[class^="link_"]:has([mask*="streaming"], [fill="#3f2158"]) {
+  background: linear-gradient(to right, rgb(63, 33, 88) , transparent);
+}
+
+/* Kernel/Ring1 is a repository of Keyframes.
 
 SNDL Specific Keyframes */
 @keyframes SNDL-Fade_In {
@@ -3545,4 +3587,4 @@ Last Base Language Update: bSID-DEV_240423*/
         --FCL-Credits_Translator-Quote: "      🗨️ [Sussy Wanker Quote] SiriusBYT: " var(--Q) "GangChat will rule over the world." var(--Q)" \A\A ";
     }
 }/* Overlay/Overlay handles code to modify the Discord Overlay *//* Splash/Splash handles customizing the Discord Updater/Splash */
-:root { --FlashCore-Build_Date: "11:20:40 - 11/01/2025"; }
+:root { --FlashCore-Build_Date: "11:59:46 - 11/01/2025"; }
