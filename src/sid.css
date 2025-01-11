@@ -24,7 +24,7 @@ Kernel/BIOS Handles fonts, variables and idle optimizations.*/
     
   --FlashCore-Branch: "ALP FlashCord";
   --FlashCore-Channel: "ALP Fork";
-  --FlashCore-Version: "0.1.6";
+  --FlashCore-Version: "0.1.7";
   
   --FlashCore-Splash_Text: "sudo pacman -S braincells";
   --FlashCore-Splash_Scale: 1.0;
@@ -3549,4 +3549,4 @@ Last Base Language Update: bSID-DEV_240423*/
         --FCL-Credits_Translator-Quote: "      🗨️ [Sussy Wanker Quote] SiriusBYT: " var(--Q) "GangChat will rule over the world." var(--Q)" \A\A ";
     }
 }/* Overlay/Overlay handles code to modify the Discord Overlay *//* Splash/Splash handles customizing the Discord Updater/Splash */
-:root { --FlashCore-Build_Date: "11:01:25 - 11/01/2025"; }
+:root { --FlashCore-Build_Date: "11:03:06 - 11/01/2025"; }
