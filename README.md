@@ -3,6 +3,8 @@
 
 # Custom Flashcord Beta Fork  
 You can load this fork with the following css
+> Loading via QuickCSS is recommended  
+> Replugged is recommended even if other clients work  
 > All FlashCord SID addons work perfect on this as I maintain compatability
 
 ```css
