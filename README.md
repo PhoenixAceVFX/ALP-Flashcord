@@ -14,6 +14,10 @@ Cutting Edge Mirror (Testing Build)
 ```css
 @import url("https://c0dera.in/Redline/api/sid.css");
 ```
+Cutting Edge Minified (Testing Build)
+```css
+@import url("https://c0dera.in/Redline/api/min.css");
+```
 
 My personal config
 > AL.PRO Installer/Configurator in testing

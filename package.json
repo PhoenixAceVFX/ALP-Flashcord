@@ -1,6 +1,6 @@
 {
   "name": "ALP Flashcord",
-  "version": "0.1.8-1",
+  "version": "0.1.8",
   "description": "Flashcord Beta Fork Modified and Maintained by RunaXR with Authorization from SiriusBYT",
   "engines": {
     "node": ">=18.0.0",
