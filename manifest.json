@@ -7,10 +7,10 @@
     "discordID": "1016895892055396484",
     "github": "PhoenixAceVFX"
   },
-  "version": "0.1.6",
+  "version": "0.1.8-1",
   "license": "CC BY-NC-ND 4.0",
   "type": "replugged-theme",
-  "main": "prod.css",
+  "main": "Flashcord/sid.css",
   "source": "https://github.com/PhoenixAceVFX/ALP-Flashcord",
   "flashcord": {
     "show_on_flashcord_store": "true"
