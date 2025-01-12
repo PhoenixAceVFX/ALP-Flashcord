@@ -131,7 +131,7 @@ html:has(body[class*="bd"]) {
 }
 
 /* Debug "Chat Effect" Styling */
-[id^="message-content-"]:has([href="http://flashcord/debug"], [href="http://flashcord/debug/store"] ) {
+[id*="message-content-"]:has([href="http://flashcord/debug"], [href="http://flashcord/debug/store"] ) {
 	padding: 8px;
 	margin: 8px;
 	line-height: 15px !important;
@@ -140,13 +140,13 @@ html:has(body[class*="bd"]) {
 	border-radius: 25px;
 }
 
-[id^="message-content-"]:has([href="http://flashcord/debug"], [href="http://flashcord/debug/store"])::after {
+[id*="message-content-"]:has([href="http://flashcord/debug"], [href="http://flashcord/debug/store"])::after {
 	color: white;
 	white-space: pre-wrap;
 	font-family: var(--Flashcord-Font_Monospace);
 }
 /* Debug Information "Chat Effects" */
-[id^="message-content-"]:has([href="http://flashcord/debug"])::after {
+[id*="message-content-"]:has([href="http://flashcord/debug"])::after {
 	content: "\A\A🚧 FLASHCORD GENERAL DEBUG INFORMATION 🚧\A \
 This information is only visible to you, please screenshot it and send it to @SiriusBYT for debug purposes if needed. \A\A \
 📸 -- Flashcord Information \A
@@ -165,7 +165,7 @@ This information is only visible to you, please screenshot it and send it to @Si
 ⚠️ Please also send the contents of your QuickCSS if you modified Flashcord. \A";
 }
 
-[id^="message-content-"]:has(a[href="http://flashcord/debug/store"])::after {
+[id*="message-content-"]:has(a[href="http://flashcord/debug/store"])::after {
 	content: "\A\A🚧 FLASHCORD STORE MODULES DEBUG INFORMATION 🚧\A \
 This information is only visible to you, please screenshot it and send it to @SiriusBYT for debug purposes if needed. \A\A \
 🛍️ Flashcord Store Version: " var(--Flashcord-API_Store-Version, '🪖 Flashcord will be powered by its Store API one day.') "\A\A \
@@ -177,7 +177,7 @@ This information is only visible to you, please screenshot it and send it to @Si
     😲 It's bloody empty in here! \A";
 }
 
-[id^="message-content-"]:has([href="http://alp/debug"], [href="http://alp/debug/store"] ) {
+[id*="message-content-"]:has([href="http://alp/debug"], [href="http://alp/debug/store"] ) {
 	padding: 8px;
 	margin: 8px;
 	line-height: 15px !important;
@@ -186,14 +186,14 @@ This information is only visible to you, please screenshot it and send it to @Si
 	border-radius: 25px;
 }
 
-[id^="message-content-"]:has([href="http://alp/debug"], [href="http://alp/debug/store"])::after {
+[id*="message-content-"]:has([href="http://alp/debug"], [href="http://alp/debug/store"])::after {
 	color: white;
 	white-space: pre-wrap;
 	font-family: var(--Flashcord-Font_Monospace);
 }
 
       /* ALP Specific Debug Information "Chat Effects" */
-[id^="message-content-"]:has([href="http://alp/debug"])::after {
+[id*="message-content-"]:has([href="http://alp/debug"])::after {
 	content: "\A\A🚧 ALP FLASHCORD GENERAL DEBUG INFORMATION 🚧\A \
 This information is only visible to you, please screenshot it and send it to @PhoenixAceVFX (RunaXR) for debug purposes if needed. \A \
 You could also just use this to flex your mods because thats what every r/unixporn user does if you ask me \A\A \
@@ -213,7 +213,7 @@ You could also just use this to flex your mods because thats what every r/unixpo
 ⚠️ Please also send the contents of your QuickCSS if you modified Flashcord. \A";
 }
 
-[id^="message-content-"]:has(a[href="http://alp/debug/store"])::after {
+[id*="message-content-"]:has(a[href="http://alp/debug/store"])::after {
 	content: "\A\A🚧 ALP FLASHCORD STORE MODULES DEBUG INFORMATION 🚧\A \
 This information is only visible to you, please screenshot it and send it to @PhoenixAceVFX (RunaXR) for debug purposes if needed. \A \
 You could also just use this to flex your mods because thats what every r/unixporn user does if you ask me \A\A \

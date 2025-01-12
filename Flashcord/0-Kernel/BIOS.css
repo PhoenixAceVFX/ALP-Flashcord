@@ -24,7 +24,7 @@ Kernel/BIOS Handles fonts, variables and idle optimizations.*/
     
   --FlashCore-Branch: "ALP FlashCord";
   --FlashCore-Channel: "SID";
-  --FlashCore-Version: "0.1.8";
+  --FlashCore-Version: "0.1.8-1";
   
   --FlashCore-Splash_Text: "sudo pacman -S braincells";
   --FlashCore-Splash_Scale: 1.0;
