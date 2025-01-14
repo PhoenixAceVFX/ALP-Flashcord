@@ -40,6 +40,8 @@ My personal config
       }
 ```
 
+## Update since Flashcord Ceres' development is very slow
+If you are considering using Flashcord Beta, please use [Phoenix's Flashcord fork](https://github.com/PhoenixAceVFX/ALP-Flashcord) until Flashcord Ceres is ready to replace Beta.
 <br>
 
 # 📸 This. This is Flashcord Beta.
