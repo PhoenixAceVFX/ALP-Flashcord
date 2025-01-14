@@ -1,6 +1,12 @@
 [![Lint](https://github.com/PhoenixAceVFX/ALP-Flashcord/actions/workflows/lint.yml/badge.svg)](https://github.com/PhoenixAceVFX/ALP-Flashcord/actions/workflows/lint.yml)
 [![Release](https://github.com/PhoenixAceVFX/ALP-Flashcord/actions/workflows/release.yml/badge.svg)](https://github.com/PhoenixAceVFX/ALP-Flashcord/actions/workflows/release.yml)
 
+# DISCORD DESKTOP UI REFRESH  
+I got put into a tester pool it seems, that or Discord is rolling out its new UI  
+This will break EVERY THEME that has not begun rewriting for this  
+This theme included, When the refresh fully hits this theme will be archived  
+This was just a maintenance, Ceres is the rewrite for the new UI  
+
 # Custom Flashcord Beta Fork  
 You can load this fork with the following css
 > Loading via QuickCSS is recommended  
