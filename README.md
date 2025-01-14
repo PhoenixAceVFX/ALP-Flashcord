@@ -2,49 +2,18 @@
 [![Release](https://github.com/PhoenixAceVFX/ALP-Flashcord/actions/workflows/release.yml/badge.svg)](https://github.com/PhoenixAceVFX/ALP-Flashcord/actions/workflows/release.yml)
 
 # DISCORD DESKTOP UI REFRESH  
-I got put into a tester pool it seems, that or Discord is rolling out its new UI  
-This will break EVERY THEME that has not begun rewriting for this  
-This theme included, When the refresh fully hits this theme will be archived  
-This was just a maintenance, Ceres is the rewrite for the new UI  
+Discord is rolling out a full refresh to the Desktop UI  
+This has effectively broken this theme and it will not be fixed  
+Flashcord Ceres is the rewrite that SiriusBYT is doing for it  
+This fork was just a maintenance fork that i do  
+The CSS URLs have been removed for this reason  
+This is now a public archive  
 
 # Custom Flashcord Beta Fork  
 You can load this fork with the following css
 > Loading via QuickCSS is recommended  
 > Replugged is recommended even if other clients work  
 > All FlashCord SID addons work perfect on this as I maintain compatability
-
-```css
-@import url("https://arch-linux.pro/sid.css");
-```
-Cutting Edge Mirror (Testing Build)
-```css
-@import url("https://c0dera.in/Redline/api/sid.css");
-```
-Cutting Edge Minified (Testing Build)
-```css
-@import url("https://c0dera.in/Redline/api/min.css");
-```
-
-My personal config
-> AL.PRO Installer/Configurator in testing
-```css
-@import url("https://arch-linux.pro/sid.css");
-:root { --Flashcord-Installer: "AL.PRO a1"; 
-     --Flashcord-Configurator: "AL.PRO b3";
-     --Flashcord-Module_Idle_Optimizations: FCM-Idle_Max;
-     --Flashcord-Module_Chat-Slide: void;
-     --Flashcord-Module_Member-Slide: void;
-     --Flashcord-Module_Message-Slide: void;
-     --Flashcord-Module_Friends: void;
-     --Flashcord-Module_Role-Grid: void;
-     --Flashcord-Module_Blackout: FCM-Boot_Blackout-Terminal;
-     --Flashcord-Warnings: void;
-     --Flashcord-Image_CBM-Light: url("https://i.imgur.com/cRGJPAW.jpeg");
-     --Flashcord-Image_CBM-Dark: url("https://i.imgur.com/cRGJPAW.jpeg");
-     --Flashcord-Filter_CBM-Light: blur(2px) brightness(0.8);
-     --Flashcord-Filter_CBM-Dark: blur(0px) brightness(0.31);
-      }
-```
 
 ## Update since Flashcord Ceres' development is very slow
 If you are considering using Flashcord Beta, please use [Phoenix's Flashcord fork](https://github.com/PhoenixAceVFX/ALP-Flashcord) until Flashcord Ceres is ready to replace Beta.
